@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <noscript><meta http-equiv="refresh" content="0; url=/exhkqyad"></noscript>
+</head>
+<style>
+    .container {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .load {
+      color: grey;
+      font-size: 3vh;
+    }
+    .spinner {
+      color: grey;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .spinner:after {
+      animation: changeContent .8s linear infinite;
+      display: block;
+      content: "⠋";
+      font-size: 5vh;
+    }
+    @keyframes changeContent {
+      10% { content: "⠙"; }
+      20% { content: "⠹"; }
+      30% { content: "⠸"; }
+      40% { content: "⠼"; }
+      50% { content: "⠴"; }
+      60% { content: "⠦"; }
+      70% { content: "⠧"; }
+      80% { content: "⠇"; }
+      90% { content: "⠏"; }
+    }
+</style>
+<body>
+  <div id="id_spinner" class="container"><div class="load">Loading...</div><div class="spinner"></div></div>
+  <div id="id_captcha_frame_div" style="display: none;height: 100vh;"></div>
+  <script type="text/javascript" src="//cdnjs.cloudflare.c
